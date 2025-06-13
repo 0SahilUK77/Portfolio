@@ -10,7 +10,7 @@ collection = db['contacts']
 
 @app.route('/')
 def index():
-    return render_template('port.html')  # your full portfolio page
+    return render_template('index.html')  # your full portfolio page
 
 @app.route('/submit', methods=['POST'])
 def submit():
