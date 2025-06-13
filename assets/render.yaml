@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: portfolio-flask-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://sahiluk77:sahil4pf@cluster0.z0mgj3v.mongodb.net/
